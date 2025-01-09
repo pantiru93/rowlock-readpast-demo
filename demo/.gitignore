@@ -1,0 +1,58 @@
+# IntelliJ IDEA-specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Maven-specific files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle-specific files
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs
+*.log
+
+# Temporary files
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Compiled files
+*.dll
+*.exe
+*.o
+*.pyc
+*.pyo
+*.so
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Coverage and testing reports
+*.coverage
+*.coveragexml
+*.gcov
+*.gcda
+*.gcno
+*.lcov
+.coverage/
+.testresults/
+.vscode/
+
+# Environment variable files
+.env
+
+# Local development files
+*.local
+*.user
