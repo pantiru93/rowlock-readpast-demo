@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Card } from '../../components/Common/Card';
 import { Chip } from '../../components/Common/Chip';
 import { useApp } from '../../state/AppContext';
+import { Reminder } from '../../types/reminder';
 import { colors } from '../../theme/colors';
 import { spacing } from '../../theme/spacing';
 import { typography } from '../../theme/typography';
@@ -23,12 +24,12 @@ export const RemindersScreen: React.FC<RemindersScreenProps> = () => {
     return state.medications.find(m => m.id === medicationId)?.name || 'Unknown';
   };
 
-  const getNextDoseTime = (reminder: any) => {
+  const getNextDoseTime = (reminder: Reminder) => {
     const nextDoseIndex = reminder.takenToday?.findIndex((taken: boolean) => !taken) ?? 0;
     return reminder.timesOfDay[nextDoseIndex] || reminder.timesOfDay[0];
   };
 
-  const getAllTaken = (reminder: any) => {
+  const getAllTaken = (reminder: Reminder) => {
     return reminder.takenToday?.every((taken: boolean) => taken) ?? false;
   };
 

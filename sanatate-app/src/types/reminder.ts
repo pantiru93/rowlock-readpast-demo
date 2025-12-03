@@ -10,10 +10,3 @@ export interface Reminder {
   takenToday?: boolean[];
 }
 
-export interface Document {
-  id: string;
-  title: string;
-  memberId: string;
-  date: string;
-  type: string;
-}

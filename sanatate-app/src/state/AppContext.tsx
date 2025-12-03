@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { Member } from '../types/member';
 import { Medication } from '../types/medication';
-import { Reminder, Document } from '../types/reminder';
+import { Reminder } from '../types/reminder';
+import { Document } from '../types/document';
 
 interface AppState {
   isOnboarded: boolean;
