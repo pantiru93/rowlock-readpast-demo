@@ -18,12 +18,10 @@ function MedicationsNavigator() {
   return (
     <MedicationsStack.Navigator
       screenOptions={{
-        headerShown: true,
         headerStyle: {
           backgroundColor: colors.background,
         },
         headerTintColor: colors.primary,
-        headerShadowVisible: false,
       }}
     >
       <MedicationsStack.Screen
@@ -34,12 +32,12 @@ function MedicationsNavigator() {
       <MedicationsStack.Screen
         name="MedicationDetails"
         component={MedicationDetailsScreen}
-        options={{ title: 'Medication Details' }}
+        options={{ title: 'Medication Details', headerShown: true }}
       />
       <MedicationsStack.Screen
         name="AddMedication"
         component={AddMedicationScreen}
-        options={{ title: 'Add Medication' }}
+        options={{ title: 'Add Medication', headerShown: true }}
       />
     </MedicationsStack.Navigator>
   );
