@@ -8,3 +8,18 @@
 .idea/misc.xml
 .idea/uiDesigner.xml
 .idea/vcs.xml
+
+# Node.js / Expo
+sanatate-app/node_modules/
+sanatate-app/.expo/
+sanatate-app/.expo-shared/
+sanatate-app/dist/
+sanatate-app/npm-debug.*
+sanatate-app/*.jks
+sanatate-app/*.p8
+sanatate-app/*.p12
+sanatate-app/*.key
+sanatate-app/*.mobileprovision
+sanatate-app/*.orig.*
+sanatate-app/web-build/
+
