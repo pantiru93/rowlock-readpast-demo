@@ -16,28 +16,37 @@ const MedicationsStack = createNativeStackNavigator();
 
 function MedicationsNavigator() {
   return (
-    <MedicationsStack.Navigator
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: colors.background,
-        },
-        headerTintColor: colors.primary,
-      }}
-    >
+    <MedicationsStack.Navigator>
       <MedicationsStack.Screen
         name="MedicationsList"
         component={MedicationsListScreen}
-        options={{ headerShown: false }}
+        options={{ 
+          headerShown: false,
+        }}
       />
       <MedicationsStack.Screen
         name="MedicationDetails"
         component={MedicationDetailsScreen}
-        options={{ title: 'Medication Details', headerShown: true }}
+        options={{ 
+          title: 'Medication Details',
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: colors.background,
+          },
+          headerTintColor: colors.primary,
+        }}
       />
       <MedicationsStack.Screen
         name="AddMedication"
         component={AddMedicationScreen}
-        options={{ title: 'Add Medication', headerShown: true }}
+        options={{ 
+          title: 'Add Medication',
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: colors.background,
+          },
+          headerTintColor: colors.primary,
+        }}
       />
     </MedicationsStack.Navigator>
   );

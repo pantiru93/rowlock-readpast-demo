@@ -19,12 +19,23 @@ export function RootNavigator() {
         <Stack.Navigator
           screenOptions={{
             headerShown: false,
-            contentStyle: { backgroundColor: colors.background },
           }}
         >
-          <Stack.Screen name="OnboardingIntro" component={OnboardingIntroScreen} />
-          <Stack.Screen name="OnboardingMembers" component={OnboardingMembersScreen} />
-          <Stack.Screen name="OnboardingPermissions" component={OnboardingPermissionsScreen} />
+          <Stack.Screen 
+            name="OnboardingIntro" 
+            component={OnboardingIntroScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen 
+            name="OnboardingMembers" 
+            component={OnboardingMembersScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen 
+            name="OnboardingPermissions" 
+            component={OnboardingPermissionsScreen}
+            options={{ headerShown: false }}
+          />
         </Stack.Navigator>
       ) : (
         <BottomTabsNavigator />
